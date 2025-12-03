@@ -1,2 +1,26 @@
-# fastapi-backend-app
-FastAPI backend demonstrating JWT auth, CRUD and DB integration
+# FastAPI Backend App
+
+ FastAPI demonstrating:
+- JWT authentication
+- CRUD endpoints (Users)
+- SQLite database (SQLAlchemy)
+- Instructions to run locally
+
+## Tech
+- Python 3.10+
+- FastAPI
+- SQLAlchemy
+- Uvicorn
+
+## Run (local)
+1. python -m venv venv
+2. source venv/bin/activate   # or venv\Scripts\activate on Windows
+3. pip install -r requirements.txt
+4. uvicorn app.main:app --reload
+
+## Endpoints
+- POST /auth/register
+- POST /auth/login
+- GET /users/ (protected)
+- GET /users/{id} (protected)
+
